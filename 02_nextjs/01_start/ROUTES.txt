@@ -1,0 +1,44 @@
+1. Static Routes
+    These are fixed URLs that never change.
+Example:
+    /about
+    /contact
+    ➡️ The file names are static, like:
+    app/about/page.tsx
+
+
+2. Dynamic Routes
+These routes change based on a parameter (like user ID or product ID).
+Example:
+    /user/123 → /user/[id]/page.tsx
+    [id] means the value is dynamic.
+
+
+3. Catch-All Routes
+    Used when you want to match any nested path.
+Example:
+    app/docs/[...slug]/page.tsx
+    This will match:
+        /docs/a
+        /docs/a/b
+        /docs/a/b/c
+        [...slug] means catch everything after /docs.
+
+
+4. Route Groups ()
+    Used to organize folders without affecting the final URL.
+Example:
+    app/(marketing)/about/page.tsx
+    Still becomes → /about
+    The folder name in () is ignored in the URL.
+
+
+5. Parallel Routes
+    Used to show multiple UI segments at the same time, like layouts containing two or more views in parallel.
+Good for:
+    dashboards
+    split screens
+    chat + details view
+
+
+

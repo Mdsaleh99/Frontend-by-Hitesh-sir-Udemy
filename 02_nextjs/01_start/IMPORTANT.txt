@@ -1,0 +1,17 @@
+https://nextjs.org/docs/app/getting-started/route-handlers
+https://nextjs.org/docs/app/api-reference/file-conventions/route
+https://nextjs.org/docs/app/getting-started/images
+https://nextjs.org/docs/app/getting-started/metadata-and-og-images
+in nextjs 16 we can not use middleware instead we have to use proxy
+https://nextjs.org/blog/next-16#proxyts-formerly-middlewarets
+https://nextjs.org/docs/app/getting-started/proxy
+https://nextjs.org/blog/next-16
+https://nextjs.org/docs/app/getting-started/layouts-and-pages
+https://nextjs.org/docs/app/getting-started/fetching-data#client-components
+https://nextjs.org/docs/app/getting-started/fetching-data
+https://nextjs.org/docs/app/getting-started/caching-and-revalidating
+https://nextjs.org/docs/app/getting-started/cache-components
+https://nextjs.org/docs/app/getting-started/server-and-client-components
+https://nextjs.org/docs/app/api-reference/file-conventions/intercepting-routes
+https://nextjs.org/docs/app/api-reference/file-conventions/parallel-routes
+https://nextjs.org/docs/app/getting-started/server-and-client-components

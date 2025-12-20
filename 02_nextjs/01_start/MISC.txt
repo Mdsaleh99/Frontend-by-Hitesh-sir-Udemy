@@ -1,0 +1,2 @@
+When we want to update entire data then we use PUT request
+When we want to update a part of data then we use PATCH request
