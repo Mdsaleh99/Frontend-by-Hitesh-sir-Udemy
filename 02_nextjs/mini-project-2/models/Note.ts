@@ -1,8 +1,10 @@
 import mongoose, { Document, Schema } from "mongoose";
 
 export interface Note extends Document {
-    title: string,
-    content: string,
+  title: string;
+  content: string;
+  createdAt: Date;
+  updatedAt: Date;
 }
 
 const noteSchema: Schema<Note> = new mongoose.Schema({
