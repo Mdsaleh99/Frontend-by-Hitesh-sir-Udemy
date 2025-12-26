@@ -15,3 +15,7 @@ https://nextjs.org/docs/app/getting-started/server-and-client-components
 https://nextjs.org/docs/app/api-reference/file-conventions/intercepting-routes
 https://nextjs.org/docs/app/api-reference/file-conventions/parallel-routes
 https://nextjs.org/docs/app/getting-started/server-and-client-components
+https://nextjs.org/docs/app/api-reference/functions/fetch
+https://nextjs.org/docs/app/api-reference/components/form
+https://nextjs.org/docs/app/api-reference/functions/revalidatePath
+https://nextjs.org/docs/app/api-reference/functions/revalidateTag

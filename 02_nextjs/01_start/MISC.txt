@@ -1,2 +1,79 @@
 When we want to update entire data then we use PUT request
 When we want to update a part of data then we use PATCH request
+
+🔹 useSearchParams
+    Used to read query parameters from the URL (after ?).
+    Example: /blog?id=10 → get id = 10.
+
+🔹 usePathname
+    Used to get the current URL path.
+    Example: /dashboard/settings → returns /dashboard/settings.
+
+🔹 useParams
+    Used to read dynamic route values from the URL.
+    Example: /user/123 → get id = 123.
+
+🔹 useRouter (Next.js)
+    Used to navigate between pages programmatically (push, replace, back).
+    Also used to control routing logic like redirects after actions.
+    Example:
+        router.push('/login') → moves user to /login page.
+
+
+🔹 Server Actions (Next.js)
+    Used to run server-side code directly from components or forms (no API route needed).
+    Commonly used for form submission, DB updates, auth actions.
+    Example idea:
+        Form → calls server action → saves data → returns result automatically.
+
+
+🔹 revalidatePath
+    https://nextjs.org/docs/app/api-reference/functions/revalidatePath
+    Revalidates (refreshes) a specific route/page.
+    Use when UI of a page changes after a server action.
+    Example: update /posts → revalidatePath('/posts')
+
+
+🔹 revalidateTag
+    https://nextjs.org/docs/app/api-reference/functions/revalidateTag
+    Revalidates all data cached with the same tag.
+    Use when multiple pages depend on the same data.
+    Example: update post data → revalidateTag('posts')
+Easy rule:
+👉 Path = one page
+👉 Tag = many related pages
+
+
+🔹 TanStack Query (React Query)
+    Manages server data fetching, caching, and syncing in React apps.
+    Automatically handles loading, error, refetch, and background updates.
+    Why use it:
+        👉 Less useEffect, less manual state, faster & cleaner data handling.
+
+
+🔹 Query (TanStack Query)
+    Used to fetch and read data (GET operations).
+    Handles caching, loading, refetching automatically.
+    👉 Example use: get users, posts, products
+    
+
+🔹 Mutation (TanStack Query)
+    Used to change data (POST, PUT, DELETE).
+    Triggers updates, refetch, or cache invalidation.
+    👉 Example use: create user, update post, delete item
+
+
+🔹 Caching (Next.js)
+    Stores fetched data or rendered results to avoid re-fetching every time.
+    Makes pages faster and cheaper by reusing data.
+    👉 Example: fetch(..., { cache: 'force-cache' })
+
+
+🔹 Hydration (Next.js)
+    Hydration is exactly when a server-rendered (static) HTML page “comes alive” and becomes interactive in the browser.
+    More clearly:
+        Server sends plain HTML (looks complete but no JS behavior)
+        Browser loads React JS
+        React attaches event listeners + state → page becomes interactive
+        One-line definition:
+            👉 Hydration = HTML + JavaScript → interactive UI
