@@ -1,3 +1,5 @@
+import TodoFilter from "@/components/todo-filter";
+import TodoList from "@/components/todo-list";
 import TodoForm from "@/components/TodoForm";
 
 export default function Home() {
@@ -12,6 +14,8 @@ export default function Home() {
         </header>
         <main>
           <TodoForm />
+          <TodoFilter />
+          <TodoList />
         </main>
       </div>
       <footer className="mt-12 text-center text-sm text-muted-foreground">
